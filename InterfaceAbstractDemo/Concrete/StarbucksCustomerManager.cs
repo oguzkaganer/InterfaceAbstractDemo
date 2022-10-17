@@ -25,7 +25,8 @@ namespace InterfaceAbstractDemo.Concrete
             }
             else
             {
-                throw new Exception("Not a valid person !");
+                Console.WriteLine("Bilgileriniz doğrulanamadı lütfen tekrar deneyiniz !\n");
+                throw new Exception();
             }
         }
 
