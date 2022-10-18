@@ -15,7 +15,7 @@ namespace InterfaceAbstractDemo
             string ad = Console.ReadLine();
             Console.Write("Soyadınız : ");
             string soyad = Console.ReadLine();
-            Console.Write("Doğum tarihiniz : ");
+            Console.Write("Doğum tarihiniz(gg.aa.yyyy): ");
             DateTime dogumTarihi = Convert.ToDateTime(Console.ReadLine());
             Console.Write("TCKN : ");
             string TcNo = Console.ReadLine();
@@ -30,6 +30,7 @@ namespace InterfaceAbstractDemo
 
             };
             Console.WriteLine();
+            git:
             Console.WriteLine("Nereye üye olmak istiyorsunuz?");
             Console.WriteLine("Starbucks için 1'e, Nero için 2'ye basınız");
             int secenek = Convert.ToInt32(Console.ReadLine());
@@ -55,6 +56,7 @@ namespace InterfaceAbstractDemo
             else
             {
                 Console.WriteLine("Lütfen 1 veya 2 giriniz !");
+                goto git;
             }
 
             Console.ReadLine();
